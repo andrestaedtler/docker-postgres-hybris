@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres:
+    image: andrestaedtler/postgres-hybris:latest
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres-hybrisdb:/var/lib/postgresql/data
+
+volumes:
+  postgres-hybrisdb:
